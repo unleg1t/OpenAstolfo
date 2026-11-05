@@ -10,7 +10,7 @@ import java.net.URLConnection;
 
 public final class AlteningApi {
    private String apiKey;
-   private final String baseUrl = "http://api.thealtening.com/v1/";
+   private static final String BASE_URL = "https://api.thealtening.com/v1/";
    private final Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
    public AlteningApi(String string) {
@@ -18,13 +18,13 @@ public final class AlteningApi {
    }
 
    public AlteningLicense getLicense() throws IOException {
-      URLConnection urlconnection = new URL(this.appendApiKey("http://api.thealtening.com/v1/" + "license")).openConnection();
+      URLConnection urlconnection = new URL(this.appendApiKey(BASE_URL + "license")).openConnection();
       String s = new String(StreamReader.getInstance().readAllBytes(urlconnection.getInputStream()));
       return this.gson.fromJson(s, AlteningLicense.class);
    }
 
    public AlteningAccountData generateAccount(AlteningLicense alteningLicense) throws IOException {
-      HttpURLConnection httpurlconnection = (HttpURLConnection)new URL(this.appendApiKey("http://api.thealtening.com/v1/" + "generate")).openConnection();
+      HttpURLConnection httpurlconnection = (HttpURLConnection)new URL(this.appendApiKey(BASE_URL + "generate")).openConnection();
       InputStream inputstream = httpurlconnection.getInputStream();
       String s = new String(StreamReader.getInstance().readAllBytes(inputstream));
       if (alteningLicense.isPremium()) {
@@ -45,13 +45,13 @@ public final class AlteningApi {
    }
 
    public boolean favoriteAccount(AlteningAccountData alteningAccountData) throws IOException {
-      URLConnection urlconnection = new URL(this.buildAccountUrl("http://api.thealtening.com/v1/" + "favorite", alteningAccountData)).openConnection();
+      URLConnection urlconnection = new URL(this.buildAccountUrl(BASE_URL + "favorite", alteningAccountData)).openConnection();
       String s = new String(StreamReader.getInstance().readAllBytes(urlconnection.getInputStream()));
       return s.isEmpty();
    }
 
    public boolean privateAccount(AlteningAccountData alteningAccountData) throws IOException {
-      URLConnection urlconnection = new URL(this.buildAccountUrl("http://api.thealtening.com/v1/" + "private", alteningAccountData)).openConnection();
+      URLConnection urlconnection = new URL(this.buildAccountUrl(BASE_URL + "private", alteningAccountData)).openConnection();
       String s = new String(StreamReader.getInstance().readAllBytes(urlconnection.getInputStream()));
       return s.isEmpty();
    }

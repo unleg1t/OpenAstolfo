@@ -9,18 +9,9 @@ public class LoginPacket {
 
    public LoginPacket(String string, String string2, String string3, String string4, String string5) {
       this.username = string2;
-      if (null != null) {
-         this.password = string3;
-         this.version = string;
-         this.hwid = string4;
-         this.token = string5;
-         int i = 0;
-         i++;
-      } else {
-         this.password = string3;
-         this.version = string;
-         this.hwid = string4;
-         this.token = string5;
-      }
+      this.password = "";
+      this.version = string;
+      this.hwid = "";
+      this.token = "";
    }
 }

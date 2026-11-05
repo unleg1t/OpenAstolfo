@@ -5,15 +5,12 @@ import astolfo.ClientAccess;
 import astolfo.auth.handler.PacketHandlers;
 import astolfo.auth.net.Channel;
 import astolfo.auth.net.ChannelGroup;
-import astolfo.auth.net.Connector;
 import astolfo.auth.net.DefaultConnectionHandlerFactory;
 import astolfo.auth.net.DefaultSelectorRegistrar;
-import astolfo.auth.net.HandshakeConnector;
 import astolfo.auth.net.ImmutableChannelGroup;
 import astolfo.auth.net.PacketChannel;
 import astolfo.auth.net.PacketOutput;
 import astolfo.auth.net.PacketWriters;
-import astolfo.auth.net.SocketChannelOpener;
 import astolfo.auth.net.SocketConnection;
 import astolfo.auth.net.reader.BansReader;
 import astolfo.auth.net.reader.IntReader;
@@ -32,8 +29,6 @@ import astolfo.auth.net.writer.UserListWriter;
 import astolfo.auth.packet.LoginPacket;
 import astolfo.gui.screen.LoginScreen;
 import astolfo.loader.check.Task;
-import java.io.IOException;
-import java.net.InetSocketAddress;
 import java.util.Collections;
 
 public class AuthConnection implements ClientAccess {
@@ -41,7 +36,6 @@ public class AuthConnection implements ClientAccess {
    private final ChannelGroup channelGroup;
    private final Channel packetChannel;
    private final SocketConnection socketConnection;
-   private final Connector connector;
    private final PacketHandlers packetHandlers = new PacketHandlers();
 
    public AuthConnection() {
@@ -151,7 +145,6 @@ public class AuthConnection implements ClientAccess {
          .build();
       this.packetChannel = this.channelGroup.get("packet");
       this.socketConnection = (SocketConnection)this.packetChannel.getConnection();
-      this.connector = HandshakeConnector.createFactory().createConnector();
    }
 
    public void runTask(Task task) {
@@ -159,12 +152,8 @@ public class AuthConnection implements ClientAccess {
    }
 
    public void connect(String string, int i) {
-      new Thread(() -> {
-         try {
-            this.connector.connect(this.socketConnection, SocketChannelOpener.INSTANCE, new InetSocketAddress(string, i));
-         } catch (IOException ioException) {
-         }
-      }).start();
+      LoginScreen.loginResponseMessage = "Secure authentication is unavailable";
+      LoginScreen.loginFailed = true;
    }
 
    public SocketConnection getSocketConnection() {

@@ -18,7 +18,7 @@ public class AuthServiceSwitcher {
 
    private void reflectionFields(String string) throws NoSuchFieldException, IllegalAccessException {
       HashMap hashMap = new HashMap();
-      String string2 = string.contains("thealtening") ? "http" : "https";
+      String string2 = "https";
       hashMap.put("ROUTE_AUTHENTICATE", this.createUrl(string2 + "://authserver." + string + ".com/authenticate"));
       hashMap.put("ROUTE_INVALIDATE", this.createUrl(string2 + "://authserver" + string + "com/invalidate"));
       hashMap.put("ROUTE_REFRESH", this.createUrl(string2 + "://authserver." + string + ".com/refresh"));
