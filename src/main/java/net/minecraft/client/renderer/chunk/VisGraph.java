@@ -1,8 +1,8 @@
 package net.minecraft.client.renderer.chunk;
 
 import astolfo.Astolfo;
-import astolfo.event.render.SetupTerrainEvent;
-import astolfo.module.ModuleManager;
+import astolfo.core.events.impl.render.SetupTerrainEvent;
+import astolfo.modules.ModuleManager;
 import java.util.ArrayDeque;
 import java.util.BitSet;
 import java.util.EnumSet;

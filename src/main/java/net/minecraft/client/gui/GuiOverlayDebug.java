@@ -1,7 +1,7 @@
 package net.minecraft.client.gui;
 
 import astolfo.Astolfo;
-import astolfo.module.movement.Flight;
+import astolfo.modules.impl.movement.Flight;
 import com.google.common.base.Strings;
 import com.google.common.collect.Lists;
 import java.io.Serializable;

@@ -1,6 +1,6 @@
 package net.minecraft.util;
 
-import astolfo.util.Stopwatch;
+import astolfo.utilities.impl.misc.Stopwatch;
 import net.minecraft.client.Minecraft;
 
 public class Timer {

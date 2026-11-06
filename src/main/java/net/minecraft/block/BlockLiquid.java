@@ -1,8 +1,8 @@
 package net.minecraft.block;
 
 import astolfo.Astolfo;
-import astolfo.event.world.LiquidCollisionEvent;
-import astolfo.module.combat.Velocity;
+import astolfo.core.events.impl.world.LiquidCollisionEvent;
+import astolfo.modules.impl.combat.Velocity;
 import java.util.Random;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyInteger;

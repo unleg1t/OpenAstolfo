@@ -1,6 +1,6 @@
 package net.minecraft.util;
 
-import astolfo.util.Vector3;
+import astolfo.utilities.impl.math.Vector3;
 import com.google.common.collect.AbstractIterator;
 import java.util.Iterator;
 import net.minecraft.entity.Entity;

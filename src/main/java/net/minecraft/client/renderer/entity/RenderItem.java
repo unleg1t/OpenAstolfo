@@ -1,9 +1,9 @@
 package net.minecraft.client.renderer.entity;
 
-import astolfo.module.ModuleManager;
-import astolfo.module.movement.Inventory;
-import astolfo.module.visuals.Camera;
-import astolfo.setting.ColorSetting;
+import astolfo.modules.ModuleManager;
+import astolfo.modules.impl.movement.Inventory;
+import astolfo.modules.impl.visual.Camera;
+import astolfo.core.settings.impl.ColorSetting;
 import java.awt.Color;
 import java.util.List;
 import java.util.concurrent.Callable;

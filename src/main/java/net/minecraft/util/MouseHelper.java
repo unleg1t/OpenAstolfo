@@ -1,6 +1,6 @@
 package net.minecraft.util;
 
-import astolfo.auth.AuthSession;
+import astolfo.api.auth.AuthSession;
 import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.Display;
 

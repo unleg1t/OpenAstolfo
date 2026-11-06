@@ -1,13 +1,13 @@
 package astolfo.unused;
 
-import astolfo.setting.BooleanSetting;
-import astolfo.setting.EnumSetting;
-import astolfo.setting.ListSetting;
-import astolfo.setting.ListSettingBuilder;
-import astolfo.setting.MapSetting;
-import astolfo.setting.MapSettingBuilder;
-import astolfo.setting.NumberSetting;
-import astolfo.setting.StringSetting;
+import astolfo.core.settings.impl.BooleanSetting;
+import astolfo.core.settings.impl.EnumSetting;
+import astolfo.core.settings.impl.ListSetting;
+import astolfo.core.settings.impl.ListSettingBuilder;
+import astolfo.core.settings.impl.MapSetting;
+import astolfo.core.settings.impl.MapSettingBuilder;
+import astolfo.core.settings.impl.NumberSetting;
+import astolfo.core.settings.impl.StringSetting;
 
 public class SettingExamples {
    public static BooleanSetting booleanSetting = new BooleanSetting("Boolean", "desc", true);

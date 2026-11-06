@@ -1,8 +1,8 @@
 package net.minecraft.client.particle;
 
-import astolfo.module.ModuleManager;
-import astolfo.module.visuals.MoreParticles;
-import astolfo.module.visuals.NoRender;
+import astolfo.modules.ModuleManager;
+import astolfo.modules.impl.visual.MoreParticles;
+import astolfo.modules.impl.visual.NoRender;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import java.util.ArrayList;

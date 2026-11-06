@@ -1,7 +1,7 @@
 package net.minecraft.client.gui;
 
-import astolfo.gui.screen.ProxyScreen;
-import astolfo.via.gui.ProtocolButton;
+import astolfo.core.gui.screen.ProxyScreen;
+import astolfo.api.via.gui.ProtocolButton;
 import com.google.common.base.Splitter;
 import com.google.common.collect.Lists;
 import com.viaversion.viaversion.api.protocol.version.ProtocolVersion;

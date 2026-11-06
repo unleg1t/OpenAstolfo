@@ -1,7 +1,7 @@
 package net.minecraft.client.resources;
 
 import astolfo.Astolfo;
-import astolfo.event.network.ResourcePackEvent;
+import astolfo.core.events.impl.network.ResourcePackEvent;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
 import com.google.common.hash.Hashing;

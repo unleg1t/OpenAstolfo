@@ -1,6 +1,6 @@
 package astolfo.unused;
 
-import astolfo.account.AlteningAccountData;
+import astolfo.api.account.AlteningAccountData;
 
 public class AlteningAccountHolder {
    private final AlteningAccountData accountData;

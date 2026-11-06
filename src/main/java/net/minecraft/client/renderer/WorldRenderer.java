@@ -1,7 +1,7 @@
 package net.minecraft.client.renderer;
 
-import astolfo.module.ModuleManager;
-import astolfo.module.visuals.Xray;
+import astolfo.modules.ModuleManager;
+import astolfo.modules.impl.visual.Xray;
 import com.google.common.primitives.Floats;
 import java.nio.Buffer;
 import java.nio.ByteBuffer;

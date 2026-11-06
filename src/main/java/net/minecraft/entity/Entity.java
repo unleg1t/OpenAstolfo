@@ -1,13 +1,13 @@
 package net.minecraft.entity;
 
 import astolfo.Astolfo;
-import astolfo.event.player.HitboxEvent;
-import astolfo.event.player.SafeWalkEvent;
-import astolfo.event.player.StepEvent;
-import astolfo.event.player.StepState;
-import astolfo.event.player.StrafeEvent;
-import astolfo.module.ModuleManager;
-import astolfo.module.visuals.NoRender;
+import astolfo.core.events.impl.player.state.HitboxEvent;
+import astolfo.core.events.impl.player.state.SafeWalkEvent;
+import astolfo.core.events.impl.player.movement.StepEvent;
+import astolfo.core.events.impl.player.movement.StepState;
+import astolfo.core.events.impl.player.movement.StrafeEvent;
+import astolfo.modules.ModuleManager;
+import astolfo.modules.impl.visual.NoRender;
 import java.util.List;
 import java.util.Random;
 import java.util.UUID;

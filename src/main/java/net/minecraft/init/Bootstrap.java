@@ -1,6 +1,6 @@
 package net.minecraft.init;
 
-import astolfo.module.visuals.HUD;
+import astolfo.modules.impl.visual.HUD;
 import com.mojang.authlib.GameProfile;
 import java.io.PrintStream;
 import java.util.Random;

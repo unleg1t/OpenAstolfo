@@ -1,6 +1,6 @@
 package net.minecraft.util;
 
-import astolfo.network.VehicleMovePacket;
+import astolfo.api.network.VehicleMovePacket;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToByteEncoder;

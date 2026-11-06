@@ -1,9 +1,9 @@
 package net.minecraft.client.entity;
 
 import astolfo.Astolfo;
-import astolfo.module.movement.Speed;
-import astolfo.module.movement.SpeedMode;
-import astolfo.user.AstolfoUser;
+import astolfo.modules.impl.movement.Speed;
+
+import astolfo.api.user.AstolfoUser;
 import com.mojang.authlib.GameProfile;
 import java.io.File;
 import net.minecraft.client.Minecraft;
@@ -127,7 +127,7 @@ public abstract class AbstractClientPlayer extends EntityPlayer {
 
       IAttributeInstance iAttributeInstance = this.getEntityAttribute(SharedMonsterAttributes.movementSpeed);
       double d = iAttributeInstance.getAttributeValue();
-      if (Astolfo.INSTANCE.getModuleManager().getModule("Speed").isEnabled() && Speed.mode.getValue() == SpeedMode.WATCHDOG) {
+      if (Astolfo.INSTANCE.getModuleManager().getModule("Speed").isEnabled() && Speed.mode.getValue() == Speed.SpeedMode.WATCHDOG) {
          d = 0.15600000414252285;
       }
 

@@ -1,6 +1,8 @@
 package astolfo;
 
 import net.minecraft.client.Minecraft;
+import astolfo.core.chat.ClientChat;
+import astolfo.core.notifications.Toasts;
 
 public interface ClientAccess {
    Minecraft mc = Minecraft.getMinecraft();

@@ -1,16 +1,16 @@
 package net.minecraft.client.gui.stream;
 
 import astolfo.Astolfo;
-import astolfo.Toasts;
-import astolfo.account.Alt;
-import astolfo.account.AltLogin;
-import astolfo.account.AltManager;
-import astolfo.gui.screen.AddAltScreen;
-import astolfo.gui.screen.AlteningScreen;
-import astolfo.gui.screen.DirectLoginScreen;
-import astolfo.render.RenderUtil;
-import astolfo.util.FileUtil;
-import astolfo.util.RandomUtils;
+import astolfo.core.notifications.Toasts;
+import astolfo.api.account.Alt;
+import astolfo.api.account.AltLogin;
+import astolfo.api.account.AltManager;
+import astolfo.core.gui.screen.AddAltScreen;
+import astolfo.core.gui.screen.AlteningScreen;
+import astolfo.core.gui.screen.DirectLoginScreen;
+import astolfo.utilities.impl.render.RenderUtil;
+import astolfo.utilities.impl.client.FileUtil;
+import astolfo.utilities.impl.misc.RandomUtils;
 import java.awt.Color;
 import java.awt.Desktop;
 import java.awt.Desktop.Action;

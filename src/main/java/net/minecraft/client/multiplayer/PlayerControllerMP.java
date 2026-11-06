@@ -1,15 +1,15 @@
 package net.minecraft.client.multiplayer;
 
 import astolfo.Astolfo;
-import astolfo.event.EventState;
-import astolfo.event.player.AttackEvent;
-import astolfo.event.world.AbortBreakingEvent;
-import astolfo.event.world.BlockBrokenEvent;
-import astolfo.event.world.DamageBlockEvent;
-import astolfo.event.world.DestroyBlockEvent;
-import astolfo.event.world.RightClickBlockEvent;
-import astolfo.module.ModuleManager;
-import astolfo.module.other.InfiniteReach;
+import astolfo.core.events.EventState;
+import astolfo.core.events.impl.player.input.AttackEvent;
+import astolfo.core.events.impl.world.AbortBreakingEvent;
+import astolfo.core.events.impl.world.BlockBrokenEvent;
+import astolfo.core.events.impl.world.DamageBlockEvent;
+import astolfo.core.events.impl.world.DestroyBlockEvent;
+import astolfo.core.events.impl.world.RightClickBlockEvent;
+import astolfo.modules.ModuleManager;
+import astolfo.modules.impl.other.InfiniteReach;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;

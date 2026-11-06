@@ -39,7 +39,7 @@ public enum SoundCategory {
    static {
       for (SoundCategory soundcategory : values()) {
          if (NAME_CATEGORY_MAP.containsKey(soundcategory.getCategoryName()) || ID_CATEGORY_MAP.containsKey(soundcategory.getCategoryId())) {
-            throw new Error("Clash in Sound Category ID & Name pools! Cannot insert " + soundcategory);
+            throw new Error("Clash in Sound ModuleCategory ID & Name pools! Cannot insert " + soundcategory);
          }
 
          NAME_CATEGORY_MAP.put(soundcategory.getCategoryName(), soundcategory);

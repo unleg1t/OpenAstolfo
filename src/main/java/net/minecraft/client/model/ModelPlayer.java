@@ -1,8 +1,8 @@
 package net.minecraft.client.model;
 
 import astolfo.Astolfo;
-import astolfo.module.ModuleManager;
-import astolfo.module.visuals.Skeleton;
+import astolfo.modules.ModuleManager;
+import astolfo.modules.impl.visual.Skeleton;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.entity.Entity;

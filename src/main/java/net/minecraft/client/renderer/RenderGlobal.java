@@ -1,7 +1,7 @@
 package net.minecraft.client.renderer;
 
 import astolfo.Astolfo;
-import astolfo.event.render.SetupTerrainEvent;
+import astolfo.core.events.impl.render.SetupTerrainEvent;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;

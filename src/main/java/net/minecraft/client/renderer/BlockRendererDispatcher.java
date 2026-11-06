@@ -1,7 +1,7 @@
 package net.minecraft.client.renderer;
 
-import astolfo.module.ModuleManager;
-import astolfo.module.visuals.Xray;
+import astolfo.modules.ModuleManager;
+import astolfo.modules.impl.visual.Xray;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;

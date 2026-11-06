@@ -1,0 +1,19 @@
+package astolfo.api.auth.handler;
+
+import astolfo.ClientAccess;
+import astolfo.api.auth.net.PacketOutput;
+import astolfo.api.auth.packet.PacketId;
+
+public abstract class PacketHandler<T> implements ClientAccess {
+   private final PacketId packetId;
+
+   public PacketHandler(PacketId packetId) {
+      this.packetId = packetId;
+   }
+
+   public abstract void handle(T object, PacketOutput packetOutput);
+
+   public PacketId getPacketId() {
+      return this.packetId;
+   }
+}

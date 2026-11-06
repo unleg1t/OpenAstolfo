@@ -1,9 +1,9 @@
 package net.minecraft.client.gui;
 
 import astolfo.Astolfo;
-import astolfo.render.RenderUtil;
-import astolfo.render.font.CustomFontRenderer;
-import astolfo.util.RandomUtils;
+import astolfo.utilities.impl.render.RenderUtil;
+import astolfo.core.font.CustomFontRenderer;
+import astolfo.utilities.impl.misc.RandomUtils;
 import java.awt.Color;
 import java.awt.Desktop;
 import java.awt.Font;

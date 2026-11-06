@@ -1,8 +1,8 @@
 package net.minecraft.client.gui;
 
 import astolfo.Astolfo;
-import astolfo.render.font.CustomFontRenderer;
-import astolfo.util.Stopwatch;
+import astolfo.core.font.CustomFontRenderer;
+import astolfo.utilities.impl.misc.Stopwatch;
 import java.io.IOException;
 import net.minecraft.client.gui.achievement.GuiAchievements;
 import net.minecraft.client.gui.achievement.GuiStats;

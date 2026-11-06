@@ -1,8 +1,8 @@
 package net.minecraft.client.gui;
 
 import astolfo.Astolfo;
-import astolfo.module.visuals.StreamerMode;
-import astolfo.user.AstolfoUser;
+import astolfo.modules.impl.visual.StreamerMode;
+import astolfo.api.user.AstolfoUser;
 import com.google.common.collect.ComparisonChain;
 import com.google.common.collect.Ordering;
 import com.mojang.authlib.GameProfile;

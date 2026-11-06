@@ -1,13 +1,13 @@
 package net.minecraft.client.renderer;
 
 import astolfo.Astolfo;
-import astolfo.event.EventState;
-import astolfo.event.render.RenderArmEvent;
-import astolfo.event.render.RenderItemEvent;
-import astolfo.event.render.RenderOverlaysEvent;
-import astolfo.module.visuals.Animations;
-import astolfo.module.visuals.AnimationsMode;
-import astolfo.module.visuals.Camera;
+import astolfo.core.events.EventState;
+import astolfo.core.events.impl.render.RenderArmEvent;
+import astolfo.core.events.impl.render.RenderItemEvent;
+import astolfo.core.events.impl.render.RenderOverlaysEvent;
+import astolfo.modules.impl.visual.Animations;
+
+import astolfo.modules.impl.visual.Camera;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -359,7 +359,7 @@ public class ItemRenderer {
                      );
                      float f5 = g;
                      float f6 = f;
-                     switch ((AnimationsMode)Animations.mode.getValue()) {
+                     switch ((Animations.AnimationsMode)Animations.mode.getValue()) {
                         case DEFAULT:
                            this.transformFirstPersonItem(f, g);
                            this.doBlockTransformations();

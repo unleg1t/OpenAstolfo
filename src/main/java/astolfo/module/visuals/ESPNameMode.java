@@ -1,8 +1,0 @@
-package astolfo.module.visuals;
-
-public enum ESPNameMode {
-   NAME,
-   DISPLAY_NAME;
-
-   private static final ESPNameMode[] VALUES = new ESPNameMode[]{NAME, DISPLAY_NAME};
-}

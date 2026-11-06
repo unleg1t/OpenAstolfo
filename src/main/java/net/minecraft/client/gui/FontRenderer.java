@@ -1,8 +1,8 @@
 package net.minecraft.client.gui;
 
 import astolfo.Astolfo;
-import astolfo.module.ModuleManager;
-import astolfo.module.visuals.StreamerMode;
+import astolfo.modules.ModuleManager;
+import astolfo.modules.impl.visual.StreamerMode;
 import com.ibm.icu.text.ArabicShaping;
 import com.ibm.icu.text.ArabicShapingException;
 import com.ibm.icu.text.Bidi;

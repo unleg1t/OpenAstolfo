@@ -1,11 +1,11 @@
 package net.minecraft.util;
 
 import astolfo.Astolfo;
-import astolfo.event.EventState;
-import astolfo.event.player.MovementInputEvent;
-import astolfo.module.ModuleManager;
-import astolfo.module.movement.Sneak;
-import astolfo.module.player.Scaffold;
+import astolfo.core.events.EventState;
+import astolfo.core.events.impl.player.movement.MovementInputEvent;
+import astolfo.modules.ModuleManager;
+import astolfo.modules.impl.movement.Sneak;
+import astolfo.modules.impl.player.Scaffold;
 import net.minecraft.client.settings.GameSettings;
 
 public class MovementInputFromOptions extends MovementInput {

@@ -1,8 +1,8 @@
 package net.minecraft.client.renderer.tileentity;
 
 import astolfo.Astolfo;
-import astolfo.event.EventState;
-import astolfo.event.render.RenderTileEntityEvent;
+import astolfo.core.events.EventState;
+import astolfo.core.events.impl.render.RenderTileEntityEvent;
 import com.google.common.collect.Maps;
 import java.util.Map;
 import net.minecraft.client.gui.FontRenderer;

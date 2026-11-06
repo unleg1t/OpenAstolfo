@@ -1,6 +1,6 @@
 package net.minecraft.crash;
 
-import astolfo.CrashReportEncryption;
+import astolfo.utilities.impl.misc.CrashReportEncryption;
 import com.google.common.collect.Lists;
 import java.io.File;
 import java.io.FileWriter;

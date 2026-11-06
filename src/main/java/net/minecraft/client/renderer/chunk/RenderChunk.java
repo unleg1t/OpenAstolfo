@@ -1,7 +1,7 @@
 package net.minecraft.client.renderer.chunk;
 
-import astolfo.module.ModuleManager;
-import astolfo.module.visuals.Xray;
+import astolfo.modules.ModuleManager;
+import astolfo.modules.impl.visual.Xray;
 import com.google.common.collect.Sets;
 import java.nio.FloatBuffer;
 import java.util.EnumMap;

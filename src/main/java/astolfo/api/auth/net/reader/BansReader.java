@@ -1,0 +1,24 @@
+package astolfo.api.auth.net.reader;
+
+import astolfo.api.auth.net.PacketReader;
+import astolfo.api.auth.packet.BansPacket;
+import astolfo.api.auth.packet.BansPacketType;
+import java.nio.ByteBuffer;
+import java.nio.charset.StandardCharsets;
+
+public class BansReader implements PacketReader<BansPacket> {
+   private BansPacket packet;
+
+   @Override
+   public void read(ByteBuffer byteBuffer) {
+      byte[] bytes = new byte[byteBuffer.getInt()];
+      byteBuffer.get(bytes);
+      int i = byteBuffer.getInt();
+      int j = byteBuffer.getInt();
+      this.packet = new BansPacket(BansPacketType.values()[j], i, new String(bytes, StandardCharsets.UTF_8));
+   }
+
+   public BansPacket getPacket() {
+      return this.packet;
+   }
+}

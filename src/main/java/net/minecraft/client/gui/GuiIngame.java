@@ -1,15 +1,15 @@
 package net.minecraft.client.gui;
 
 import astolfo.Astolfo;
-import astolfo.event.render.RenderEvent;
-import astolfo.event.render.RenderHotbarEvent;
-import astolfo.event.render.RenderOverlaysEvent;
-import astolfo.event.render.RenderType;
-import astolfo.gui.CustomChatGui;
-import astolfo.module.ModuleManager;
-import astolfo.module.hidden.TitleAnnouncer;
-import astolfo.module.visuals.Crosshair;
-import astolfo.module.visuals.StreamerMode;
+import astolfo.core.events.impl.render.RenderEvent;
+import astolfo.core.events.impl.render.RenderHotbarEvent;
+import astolfo.core.events.impl.render.RenderOverlaysEvent;
+import astolfo.core.events.impl.render.RenderType;
+import astolfo.core.gui.CustomChatGui;
+import astolfo.modules.ModuleManager;
+import astolfo.modules.impl.hidden.TitleAnnouncer;
+import astolfo.modules.impl.visual.Crosshair;
+import astolfo.modules.impl.visual.StreamerMode;
 import com.google.common.base.Predicate;
 import com.google.common.collect.Iterables;
 import com.google.common.collect.Lists;
@@ -493,15 +493,15 @@ public class GuiIngame extends Gui {
          i = Math.max(i, this.getFontRenderer().getStringWidth(string));
       }
 
-      astolfo.module.visuals.Scoreboard scoreboard2 = Astolfo.INSTANCE.getModuleManager().get(astolfo.module.visuals.Scoreboard.class);
+      astolfo.modules.impl.visual.Scoreboard scoreboard2 = Astolfo.INSTANCE.getModuleManager().get(astolfo.modules.impl.visual.Scoreboard.class);
       StreamerMode streamerMode2 = (StreamerMode)ModuleManager.streamerMode;
       int j = arrayList2.size() * this.getFontRenderer().FONT_HEIGHT;
       int l = scaledRes.getScaledHeight() / 2 + j / 3;
       if (scoreboard2.isEnabled()) {
-         l = (int)(l + astolfo.module.visuals.Scoreboard.position.getValue());
+         l = (int)(l + astolfo.modules.impl.visual.Scoreboard.position.getValue());
       }
 
-      boolean bl = !scoreboard2.isEnabled() || !astolfo.module.visuals.Scoreboard.remove.getValue();
+      boolean bl = !scoreboard2.isEnabled() || !astolfo.modules.impl.visual.Scoreboard.remove.getValue();
       int b = 3;
       int m = scaledRes.getScaledWidth() - i - b;
       int n = 0;

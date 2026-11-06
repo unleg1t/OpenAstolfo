@@ -1,7 +1,7 @@
 package net.minecraft.entity.boss;
 
 import astolfo.Astolfo;
-import astolfo.module.combat.Hitboxes;
+import astolfo.modules.impl.combat.Hitboxes;
 import com.google.common.base.Predicate;
 import com.google.common.base.Predicates;
 import java.util.List;

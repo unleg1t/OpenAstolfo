@@ -1,24 +1,24 @@
 package net.minecraft.client.entity;
 
 import astolfo.Astolfo;
-import astolfo.event.EventState;
-import astolfo.event.player.ChatDirection;
-import astolfo.event.player.ChatEvent;
-import astolfo.event.player.MotionEvent;
-import astolfo.event.player.MoveEvent;
-import astolfo.event.player.MoveWithHeadingEvent;
-import astolfo.event.player.PushOutOfBlocksEvent;
-import astolfo.event.player.RotationYawEvent;
-import astolfo.event.player.UpdateEvent;
-import astolfo.module.ModuleManager;
-import astolfo.module.exploits.HideWindow;
-import astolfo.module.exploits.RiderGod;
-import astolfo.module.movement.Speed;
-import astolfo.module.movement.SpeedMode;
-import astolfo.module.movement.Sprint;
-import astolfo.network.VehicleMovePacket;
-import astolfo.util.GameUtil;
-import astolfo.util.Stopwatch;
+import astolfo.core.events.EventState;
+import astolfo.core.events.impl.player.input.ChatDirection;
+import astolfo.core.events.impl.player.input.ChatEvent;
+import astolfo.core.events.impl.player.movement.MotionEvent;
+import astolfo.core.events.impl.player.movement.MoveEvent;
+import astolfo.core.events.impl.player.movement.MoveWithHeadingEvent;
+import astolfo.core.events.impl.player.state.PushOutOfBlocksEvent;
+import astolfo.core.events.impl.player.state.RotationYawEvent;
+import astolfo.core.events.impl.player.update.UpdateEvent;
+import astolfo.modules.ModuleManager;
+import astolfo.modules.impl.exploits.HideWindow;
+import astolfo.modules.impl.exploits.RiderGod;
+import astolfo.modules.impl.movement.Speed;
+
+import astolfo.modules.impl.movement.Sprint;
+import astolfo.api.network.VehicleMovePacket;
+import astolfo.utilities.impl.client.GameUtil;
+import astolfo.utilities.impl.misc.Stopwatch;
 import net.minecraft.block.BlockLiquid;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.audio.MovingSoundMinecartRiding;
@@ -769,7 +769,7 @@ public class EntityPlayerSP extends AbstractClientPlayer {
       if (this.isSprinting() && (this.movementInput.moveForward < f || this.isCollidedHorizontally || !bl4)) {
          boolean bl5 = Astolfo.INSTANCE.getModuleManager().get(Sprint.class).isEnabled();
          if ((!bl5 || !Sprint.omnidirectional.getValue())
-            && (Speed.mode.getValue() != SpeedMode.WATCHDOG || !Astolfo.INSTANCE.getModuleManager().get(Speed.class).isEnabled())) {
+            && (Speed.mode.getValue() != Speed.SpeedMode.WATCHDOG || !Astolfo.INSTANCE.getModuleManager().get(Speed.class).isEnabled())) {
             this.setSprinting(false);
          }
       }

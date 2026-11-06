@@ -1,7 +1,7 @@
 package net.minecraft.client.gui;
 
-import astolfo.gui.screen.CapeSettingsScreen;
-import astolfo.gui.screen.CustomResourcePacksScreen;
+import astolfo.core.gui.screen.CapeSettingsScreen;
+import astolfo.core.gui.screen.CustomResourcePacksScreen;
 import java.io.IOException;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.audio.PositionedSoundRecord;

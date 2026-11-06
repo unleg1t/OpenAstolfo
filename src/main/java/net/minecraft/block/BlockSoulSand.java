@@ -1,8 +1,8 @@
 package net.minecraft.block;
 
 import astolfo.Astolfo;
-import astolfo.module.ModuleManager;
-import astolfo.module.movement.NoSlow;
+import astolfo.modules.ModuleManager;
+import astolfo.modules.impl.movement.NoSlow;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;

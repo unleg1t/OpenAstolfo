@@ -1,6 +1,6 @@
 package net.minecraft.world;
 
-import astolfo.module.ModuleManager;
+import astolfo.modules.ModuleManager;
 import com.google.common.base.Predicate;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;

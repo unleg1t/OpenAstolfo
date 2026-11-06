@@ -1,7 +1,7 @@
 package net.minecraft.client.multiplayer;
 
-import astolfo.server.ServerManager;
-import astolfo.server.ServerType;
+import astolfo.utilities.impl.server.ServerManager;
+import astolfo.utilities.impl.server.ServerType;
 import com.google.common.collect.Sets;
 import java.util.Random;
 import java.util.Set;

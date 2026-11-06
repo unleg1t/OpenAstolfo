@@ -1,8 +1,8 @@
 package net.minecraft.client.renderer;
 
 import astolfo.Astolfo;
-import astolfo.event.render.RenderBlockEvent;
-import astolfo.module.ModuleManager;
+import astolfo.core.events.impl.render.RenderBlockEvent;
+import astolfo.modules.ModuleManager;
 import java.util.BitSet;
 import java.util.List;
 import net.minecraft.block.Block;

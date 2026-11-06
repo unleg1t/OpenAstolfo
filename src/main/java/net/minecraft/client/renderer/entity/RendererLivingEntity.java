@@ -1,9 +1,9 @@
 package net.minecraft.client.renderer.entity;
 
 import astolfo.Astolfo;
-import astolfo.event.render.RenderLivingEvent;
-import astolfo.event.render.RenderModelEvent;
-import astolfo.event.render.RenderNameTagEvent;
+import astolfo.core.events.impl.render.RenderLivingEvent;
+import astolfo.core.events.impl.render.RenderModelEvent;
+import astolfo.core.events.impl.render.RenderNameTagEvent;
 import com.google.common.collect.Lists;
 import java.nio.Buffer;
 import java.nio.FloatBuffer;

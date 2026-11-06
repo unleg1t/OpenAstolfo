@@ -1,7 +1,7 @@
 package net.minecraft.client.renderer.entity;
 
 import astolfo.Astolfo;
-import astolfo.event.render.PlayerModelVisibilityEvent;
+import astolfo.core.events.impl.render.PlayerModelVisibilityEvent;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.AbstractClientPlayer;
 import net.minecraft.client.entity.EntityPlayerSP;

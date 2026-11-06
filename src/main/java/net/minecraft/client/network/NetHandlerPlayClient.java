@@ -1,10 +1,10 @@
 package net.minecraft.client.network;
 
 import astolfo.Astolfo;
-import astolfo.auth.DisconnectHandler;
-import astolfo.module.ModuleManager;
-import astolfo.util.GameUtil;
-import astolfo.via.ViaFabric;
+import astolfo.api.auth.DisconnectHandler;
+import astolfo.modules.ModuleManager;
+import astolfo.utilities.impl.client.GameUtil;
+import astolfo.api.via.ViaFabric;
 import com.google.common.collect.Maps;
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;

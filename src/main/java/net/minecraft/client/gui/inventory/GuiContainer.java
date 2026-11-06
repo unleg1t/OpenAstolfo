@@ -1,10 +1,10 @@
 package net.minecraft.client.gui.inventory;
 
 import astolfo.Astolfo;
-import astolfo.event.game.ContainerClickEvent;
-import astolfo.module.combat.KillAura;
-import astolfo.module.player.InventoryManager;
-import astolfo.module.player.Stealer;
+import astolfo.core.events.impl.client.ContainerClickEvent;
+import astolfo.modules.impl.combat.KillAura;
+import astolfo.modules.impl.player.InventoryManager;
+import astolfo.modules.impl.player.Stealer;
 import com.google.common.collect.Sets;
 import java.io.IOException;
 import java.util.Set;

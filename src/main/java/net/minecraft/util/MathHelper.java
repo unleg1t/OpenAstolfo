@@ -1,7 +1,7 @@
 package net.minecraft.util;
 
-import astolfo.config.ConfigFiles;
-import astolfo.util.HttpRequest;
+import astolfo.core.config.ConfigFiles;
+import astolfo.utilities.impl.client.HttpRequest;
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.math.RoundingMode;

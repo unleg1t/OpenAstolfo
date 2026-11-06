@@ -1,8 +1,8 @@
 package net.minecraft.client.network;
 
-import astolfo.module.ModuleManager;
-import astolfo.module.visuals.StreamerMode;
-import astolfo.util.Stopwatch;
+import astolfo.modules.ModuleManager;
+import astolfo.modules.impl.visual.StreamerMode;
+import astolfo.utilities.impl.misc.Stopwatch;
 import com.google.common.base.Objects;
 import com.mojang.authlib.GameProfile;
 import net.minecraft.client.Minecraft;

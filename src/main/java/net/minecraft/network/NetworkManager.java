@@ -1,13 +1,13 @@
 package net.minecraft.network;
 
 import astolfo.Astolfo;
-import astolfo.event.network.PacketDirection;
-import astolfo.event.network.PacketEvent;
-import astolfo.network.ProxyChannelFactory;
-import astolfo.network.VehicleMovePacket;
-import astolfo.via.handler.VRDecodeHandler;
-import astolfo.via.handler.VREncodeHandler;
-import astolfo.via.protocol.ViaFabricHostnameProtocol;
+import astolfo.core.events.impl.network.PacketDirection;
+import astolfo.core.events.impl.network.PacketEvent;
+import astolfo.api.network.ProxyChannelFactory;
+import astolfo.api.network.VehicleMovePacket;
+import astolfo.api.via.handler.VRDecodeHandler;
+import astolfo.api.via.handler.VREncodeHandler;
+import astolfo.api.via.protocol.ViaFabricHostnameProtocol;
 import com.google.common.collect.Queues;
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
 import com.viaversion.viaversion.connection.UserConnectionImpl;

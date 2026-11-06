@@ -1,9 +1,9 @@
 package net.minecraft.entity.player;
 
 import astolfo.Astolfo;
-import astolfo.event.player.JumpEvent;
-import astolfo.module.combat.KeepSprint;
-import astolfo.module.movement.Flight;
+import astolfo.core.events.impl.player.movement.JumpEvent;
+import astolfo.modules.impl.combat.KeepSprint;
+import astolfo.modules.impl.movement.Flight;
 import com.google.common.base.Charsets;
 import com.google.common.collect.Lists;
 import com.mojang.authlib.GameProfile;

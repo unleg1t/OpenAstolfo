@@ -1,9 +1,9 @@
 package net.minecraft.client.gui;
 
 import astolfo.Astolfo;
-import astolfo.gui.screen.LoginScreen;
-import astolfo.loader.GuiStage;
-import astolfo.loader.LoadStage;
+import astolfo.core.gui.screen.LoginScreen;
+import astolfo.api.loader.GuiStage;
+import astolfo.api.loader.LoadStage;
 import com.google.common.base.Splitter;
 import com.google.common.base.Strings;
 import com.google.common.collect.Lists;

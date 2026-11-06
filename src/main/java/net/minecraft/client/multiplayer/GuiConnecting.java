@@ -1,6 +1,6 @@
 package net.minecraft.client.multiplayer;
 
-import astolfo.via.util.VFAddressParser;
+import astolfo.api.via.util.VFAddressParser;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.UnknownHostException;

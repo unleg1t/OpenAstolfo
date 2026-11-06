@@ -1,15 +1,15 @@
 package net.minecraft.client.gui;
 
 import astolfo.Astolfo;
-import astolfo.Toasts;
-import astolfo.account.AccountType;
-import astolfo.account.Alt;
-import astolfo.account.AltLogin;
-import astolfo.gui.screen.AlteningScreen;
-import astolfo.util.FileUtil;
-import astolfo.util.MathUtil;
-import astolfo.util.RandomUtils;
-import astolfo.util.Stopwatch;
+import astolfo.core.notifications.Toasts;
+import astolfo.api.account.AccountType;
+import astolfo.api.account.Alt;
+import astolfo.api.account.AltLogin;
+import astolfo.core.gui.screen.AlteningScreen;
+import astolfo.utilities.impl.client.FileUtil;
+import astolfo.utilities.impl.math.MathUtil;
+import astolfo.utilities.impl.misc.RandomUtils;
+import astolfo.utilities.impl.misc.Stopwatch;
 import java.awt.Color;
 import java.awt.Desktop;
 import java.awt.Desktop.Action;

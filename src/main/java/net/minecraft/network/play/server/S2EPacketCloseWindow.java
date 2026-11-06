@@ -1,8 +1,8 @@
 package net.minecraft.network.play.server;
 
-import astolfo.gui.clickgui.defaultgui.DefaultClickGuiScreen;
-import astolfo.gui.clickgui.sidebar.SidebarClickGuiScreen;
-import astolfo.gui.clickgui.transparent.TransparentClickGuiScreen;
+import astolfo.core.gui.clickgui.defaultgui.DefaultClickGuiScreen;
+import astolfo.core.gui.clickgui.sidebar.SidebarClickGuiScreen;
+import astolfo.core.gui.clickgui.transparent.TransparentClickGuiScreen;
 import java.io.IOException;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiChat;

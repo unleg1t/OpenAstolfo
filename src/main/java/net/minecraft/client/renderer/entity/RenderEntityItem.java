@@ -1,6 +1,6 @@
 package net.minecraft.client.renderer.entity;
 
-import astolfo.module.ModuleManager;
+import astolfo.modules.ModuleManager;
 import java.util.Random;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockLiquid;

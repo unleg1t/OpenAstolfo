@@ -1,11 +1,11 @@
 package net.minecraft.entity;
 
 import astolfo.Astolfo;
-import astolfo.event.player.RotationYawEvent;
-import astolfo.module.exploits.RiderGod;
-import astolfo.module.movement.NoSlow;
-import astolfo.module.movement.Sprint;
-import astolfo.module.visuals.Animations;
+import astolfo.core.events.impl.player.state.RotationYawEvent;
+import astolfo.modules.impl.exploits.RiderGod;
+import astolfo.modules.impl.movement.NoSlow;
+import astolfo.modules.impl.movement.Sprint;
+import astolfo.modules.impl.visual.Animations;
 import com.google.common.base.Predicate;
 import com.google.common.base.Predicates;
 import com.google.common.collect.Maps;

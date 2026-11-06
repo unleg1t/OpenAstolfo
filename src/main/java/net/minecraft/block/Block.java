@@ -1,11 +1,11 @@
 package net.minecraft.block;
 
 import astolfo.Astolfo;
-import astolfo.event.CancellableEvent;
-import astolfo.event.render.BlockOpaqueEvent;
-import astolfo.module.ModuleManager;
-import astolfo.module.visuals.Xray;
-import astolfo.module.visuals.XrayHypixelMode;
+import astolfo.core.events.CancellableEvent;
+import astolfo.core.events.impl.render.BlockOpaqueEvent;
+import astolfo.modules.ModuleManager;
+import astolfo.modules.impl.visual.Xray;
+
 import java.util.List;
 import java.util.Random;
 import net.minecraft.block.material.MapColor;
@@ -325,7 +325,7 @@ public class Block {
 
    public boolean shouldSideBeRendered(IBlockAccess worldIn, BlockPos pos, EnumFacing side) {
       if (ModuleManager.xray.isEnabled() && Xray.isEnabledOre(this)) {
-         if (Xray.hypixel.getValue() == XrayHypixelMode.FALSE) {
+         if (Xray.hypixel.getValue() == Xray.XrayHypixelMode.FALSE) {
             return true;
          }
 
